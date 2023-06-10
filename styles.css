@@ -3,3 +3,16 @@ html {
     box-sizing: border-box;
     font-family: "Open sans";
 }
+body {
+    margin: 0 auto;
+}
+
+header {
+    height: 6rem;
+    max-height: 15vh;
+}
+
+footer {
+    height: 2rem;
+    min-height: 10vh;
+}
