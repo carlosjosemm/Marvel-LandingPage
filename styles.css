@@ -3,13 +3,42 @@ html {
     box-sizing: border-box;
     font-family: "Open sans";
 }
+
 body {
     margin: 0 auto;
 }
 
+body, html {
+    height: 100%;
+  }
+  
 header {
     height: 6rem;
     max-height: 15vh;
+}
+.header-logo {
+    height: 100%;
+}
+
+.bg-parallax {
+  background-image: url("./media/img/capamerica.png");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+}
+
+/* Turn off parallax scrolling for tablets and phones. */
+@media only screen and (max-device-width: 700px) {
+    .bg-parallax {
+        background-attachment: scroll;
+    }
+  }
+
+article {
+    background-color: transparent;
 }
 
 footer {
