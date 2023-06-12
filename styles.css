@@ -48,13 +48,18 @@ footer {
 }
 
 .nav-header {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto 1fr;
-    gap: 0 1rem;
     background-color: blue;
 }
+.nav-header > div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0 1rem;
+    background-color: transparent;
+    margin: 0 auto;
+    max-width: 900px;
+}
 
-.nav-header > .nav-header__element {
+.nav-header > div > .nav-header__element {
     font-size: 130%;
     margin: 0 1rem;
     align-self: center;
