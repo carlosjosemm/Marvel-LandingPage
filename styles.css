@@ -180,7 +180,7 @@ footer {
     }
   }
 
-.content__panel--left {
+.content__panel--narrow {
     background-color: #7a0d12;
     font-weight: 500;
     max-width: 100%;
@@ -190,31 +190,31 @@ footer {
     color: white;
 }
 
-.content__panel--left__overviewContent {
+.content__panel--narrow__overviewContent {
     display: flex;
     width: 100%;
     flex-direction: row-reverse;
     align-items: flex-start;
 }
 
-.content__panel--left__overviewContent > div {
+.content__panel--narrow__overviewContent > div {
     max-width: 70%;
 }
 
-.content__panel--left__overviewContent > img {
+.content__panel--narrow__overviewContent > img {
     flex: 2 0 auto;
     padding: 1em;
     max-width: 30%;
 }
 
-.content__panel--left__movieinfo {
+.content__panel--narrow__movieinfo {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3rem;
     padding: 1rem;
 }
 
-.content__panel--left__movieinfo > .info-element > h3 {
+.content__panel--narrow__movieinfo > .info-element > h3 {
     color: lightgray;
 }
 
@@ -227,7 +227,7 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-    .content__panel--left__gridcontent {
+    .content__panel--narrow__gridcontent {
         gap: 1rem;
     }
     .icons__grid img {
@@ -244,21 +244,21 @@ footer {
         height: 2rem;
     }
     /* Collapse the flex-box into vertical blocks */
-    .content__panel--left__overviewContent {
+    .content__panel--narrow__overviewContent {
         display: block;
     }
     /* Resize the poster to fill panel */
-    .content__panel--left__overviewContent > img {
+    .content__panel--narrow__overviewContent > img {
         padding: 0;
         width: 100%;
         max-width: none;
     }
     /* Resize text to fill panel*/
-    .content__panel--left__overviewContent > div {
+    .content__panel--narrow__overviewContent > div {
         max-width: 100%;
     }
     /* Collapse the columns into rows */
-    .content__panel--left__movieinfo {
+    .content__panel--narrow__movieinfo {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
@@ -266,11 +266,11 @@ footer {
         padding: 0;
     }
     /* Adjust content panel styling for mobile devices */
-    .content__panel--left {
+    .content__panel--narrow {
         margin: 0rem 1rem;
         padding: 1rem 2rem;
     }
-    .content__panel--left > h1 {
+    .content__panel--narrow > h1 {
         margin: 0.5rem auto;
     }
     .content__panel--wide {
