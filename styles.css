@@ -71,11 +71,16 @@ footer {
 .content__panel--wide {
     background-color: #949899;
     color: black;
-    font-weight: 600;
+    font-weight: 800;
     width: 100%;
     margin: 0 0 1rem 0;
     padding: 1.5rem 1rem;
     text-align: center;
+}
+
+.content__panel--wide > div > p {
+    font-size: 200%;
+    margin: 0 0 1rem 0;
 }
 
 /* Limit the width of content for VERY wide screens */
