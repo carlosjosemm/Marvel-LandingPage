@@ -41,6 +41,7 @@ header {
 /* Turn off parallax scrolling for tablets and phones. */
 @media only screen and (max-device-width: 700px) {
     .bg__parallax {
+        background-image: none;
         background-attachment: scroll;
     }
   }
@@ -109,18 +110,6 @@ footer {
     height: 8rem;
 }
 
-@media only screen and (max-width: 900px) {
-    .icons__grid img {
-        height: 5rem;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .icons__grid img {
-        height: 3rem;
-    }
-}
-
 /* Hover on animationon icons */
 .icons__grid img:hover {
     animation: scale-up-center 0.3s ease-in-out forwards;
@@ -145,7 +134,7 @@ footer {
     100% {
       transform: scale(1);
     }
-  }  
+  }
 
 .content__panel--left {
     background-color: #7a0d12;
@@ -164,12 +153,6 @@ footer {
     align-items: flex-start;
 }
 
-@media only screen and (max-width: 430px) {
-    .content__panel--left__overviewContent {
-        display: block;
-    }
-}
-
 .content__panel--left__overviewContent > div {
     max-width: 70%;
 }
@@ -180,19 +163,51 @@ footer {
     max-width: 30%;
 }
 
-.content__panel--left__gridcontent {
+.content__panel--left__movieinfo {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3rem;
     padding: 1rem;
 }
 
-.content__panel--left__gridcontent > .grid-element > h3 {
+.content__panel--left__movieinfo > .info-element > h3 {
     color: lightgray;
 }
 
 @media only screen and (max-width: 900px) {
     .content__panel--left__gridcontent {
         gap: 1rem;
+    }
+    .icons__grid img {
+        height: 4rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* Resize the strem icons */
+    .icons__grid img {
+        height: 2rem;
+    }
+    /* Collapse the flex-box into vertical blocks */
+    .content__panel--left__overviewContent {
+        display: block;
+    }
+    /* Resize the poster to fill panel */
+    .content__panel--left__overviewContent > img {
+        padding: 0;
+        width: 100%;
+        max-width: none;
+    }
+    /* Resize text to fill panel*/
+    .content__panel--left__overviewContent > div {
+        max-width: 100%;
+    }
+    /* Collapse the columns into rows */
+    .content__panel--left__movieinfo {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        gap: 0;
+        padding: 0;
     }
 }
