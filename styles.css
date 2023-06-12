@@ -92,6 +92,32 @@ footer {
     height: 8rem;
 }
 
+/* Hover on animationon icons */
+.icons__grid img:hover {
+    animation: scale-up-center 0.3s ease-in-out forwards;
+}
+@keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  /* Hover off animation on icons */
+.icons__grid img:not(:hover) {
+    animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+  @keyframes scale-down-center {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }  
+
 .content__panel--left {
     background-color: #7a0d12;
     font-weight: 500;
