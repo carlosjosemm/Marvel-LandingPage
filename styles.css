@@ -71,6 +71,12 @@ footer {
     display: none;
 }
 
+.nav-header__mobileMenu__content {
+    display: none;
+    /* Just in case there's a mouse in use ?? */
+    cursor: pointer;
+}
+
 .nav-header > .nav-header__wideMenu {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -224,15 +230,7 @@ footer {
         padding: 0;
     }
     .nav-header > .nav-header__wideMenu {
-        position: absolute;
         display: none;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto;
-        gap: 0;
-        margin: 0;
-        width: fit-content;
-        background-color: blue;
-        z-index: 100;
     }
     .nav-header__element {
         padding-bottom: 5px;
@@ -240,10 +238,9 @@ footer {
     .nav-header > .nav-header__mobileMenu {
         display: block;
         position: absolute;
-        margin: 0 auto;
         text-align: center;
         width: 100%;
-        background-color: red;
+        background-color: #7a0d12;
         height: min-content;
     }
     .nav-header__logo--mobile {
