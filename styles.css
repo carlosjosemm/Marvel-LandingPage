@@ -16,8 +16,9 @@ header {
     height: 6rem;
     max-height: 15vh;
 }
-.header__logo {
-    height: 100%;
+.nav-header__logo {
+    height: 6rem;
+    max-height: 15vh;
 }
 
 .bg__parallax {
@@ -44,4 +45,20 @@ article {
 footer {
     height: 2rem;
     min-height: 10vh;
+}
+
+.nav-header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto 1fr;
+    gap: 0 1rem;
+    background-color: blue;
+}
+
+.nav-header > .nav-header__element {
+    font-size: 130%;
+    margin: 0 1rem;
+    align-self: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
