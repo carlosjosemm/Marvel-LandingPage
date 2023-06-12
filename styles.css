@@ -11,16 +11,16 @@ body {
 body, html {
     height: 100%;
   }
-  
+
 header {
     height: 6rem;
     max-height: 15vh;
 }
-.header-logo {
+.header__logo {
     height: 100%;
 }
 
-.bg-parallax {
+.bg__parallax {
   background-image: url("./media/img/capamerica.png");
   min-height: 100vh;
   background-attachment: fixed;
@@ -32,7 +32,7 @@ header {
 
 /* Turn off parallax scrolling for tablets and phones. */
 @media only screen and (max-device-width: 700px) {
-    .bg-parallax {
+    .bg__parallax {
         background-attachment: scroll;
     }
   }
