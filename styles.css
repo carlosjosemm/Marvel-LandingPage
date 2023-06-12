@@ -15,6 +15,10 @@ body, html {
     height: 100%;
   }
 
+h1 {
+    font-size: 2rem;
+}
+
 header {
     height: 6rem;
     max-height: 15vh;
@@ -134,9 +138,49 @@ footer {
 .content__panel--left {
     background-color: #7a0d12;
     font-weight: 500;
-    width: max-content;
-    margin: 1rem 0 1rem 1rem;
-    padding: 1.5rem 1rem 1.5rem 2rem;
-    border-radius: 1ch;
+    max-width: 100%;
+    margin: 1rem 2rem;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
     color: white;
+}
+
+.content__panel--left__overviewContent {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 430px) {
+    .content__panel--left__overviewContent {
+        display: block;
+    }
+}
+
+.content__panel--left__overviewContent > div {
+    max-width: 70%;
+}
+
+.content__panel--left__overviewContent > img {
+    flex: 2 0 auto;
+    padding: 1em;
+    max-width: 30%;
+}
+
+.content__panel--left__gridcontent {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.content__panel--left__gridcontent > .grid-element > h3 {
+    color: lightgray;
+}
+
+@media only screen and (max-width: 900px) {
+    .content__panel--left__gridcontent {
+        gap: 1rem;
+    }
 }
