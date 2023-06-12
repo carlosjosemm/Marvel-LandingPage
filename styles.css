@@ -200,6 +200,9 @@ footer {
     .icons__grid img {
         height: 4rem;
     }
+    .nav-header > .nav-header__wideMenu > .nav-header__element {
+        font-size: 75%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
