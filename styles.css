@@ -244,6 +244,18 @@ footer {
         gap: 0;
         padding: 0;
     }
+    /* Adjust content panel styling for mobile devices */
+    .content__panel--left {
+        margin: 0rem 1rem;
+        padding: 1rem 2rem;
+    }
+    .content__panel--left > h1 {
+        margin: 0.5rem auto;
+    }
+    .content__panel--wide {
+        margin: 0 0 0.5rem 0;
+        padding: 2rem 1rem 1rem 1rem;
+    }
     /* Hide the wide menu (tablets & desktop) */
     .nav-header > .nav-header__wideMenu {
         display: none;
