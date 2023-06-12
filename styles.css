@@ -23,9 +23,17 @@ header {
     height: 6rem;
     max-height: 15vh;
 }
-.nav-header__logo {
+.nav-header__logo, .nav-header__logo--mobile {
     height: 6rem;
     max-height: 15vh;
+}
+
+.nav-header__logo--mobile {
+    display: none;
+}
+
+.nav-header__logo > img, .nav-header__logo--mobile > img {
+    height: 100%;
 }
 
 .bg__parallax {
@@ -58,7 +66,12 @@ footer {
 .nav-header {
     background-color: blue;
 }
-.nav-header > div {
+
+.nav-header > .nav-header__mobileMenu {
+    display: none;
+}
+
+.nav-header > .nav-header__wideMenu {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 0 1rem;
@@ -67,7 +80,7 @@ footer {
     max-width: 900px;
 }
 
-.nav-header > div > .nav-header__element {
+.nav-header > .nav-header__wideMenu > .nav-header__element {
     font-size: 130%;
     margin: 0 1rem;
     align-self: center;
@@ -209,5 +222,33 @@ footer {
         grid-template-rows: auto auto auto;
         gap: 0;
         padding: 0;
+    }
+    .nav-header > .nav-header__wideMenu {
+        position: absolute;
+        display: none;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 0;
+        margin: 0;
+        width: fit-content;
+        background-color: blue;
+        z-index: 100;
+    }
+    .nav-header__element {
+        padding-bottom: 5px;
+    }
+    .nav-header > .nav-header__mobileMenu {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        background-color: red;
+        height: min-content;
+    }
+    .nav-header__logo--mobile {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
     }
 }
