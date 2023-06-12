@@ -10,8 +10,13 @@ html {
 .content__trailer {
     margin: 0 32px 16px 32px;
 }
-.content__trailer > h3 {
+.content__trailer > h2 {
+    margin: 25px;
     margin-bottom: 8px;
+}
+.trailer-icon {
+    vertical-align: middle;
+    margin-top: -5px;
 }
 .content__trailerWrapper {
     text-align: center;
@@ -63,8 +68,8 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60%;
-  opacity: 0.8;
+  background-size: 40%;
+  opacity: 1;
 }
 
 /* Turn off parallax scrolling for tablets and phones. */
