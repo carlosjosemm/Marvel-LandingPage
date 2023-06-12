@@ -91,3 +91,13 @@ footer {
 .icons__grid img {
     height: 8rem;
 }
+
+.content__panel--left {
+    background-color: #7a0d12;
+    font-weight: 500;
+    width: max-content;
+    margin: 1rem 0 1rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 2rem;
+    border-radius: 1ch;
+    color: white;
+}
