@@ -378,5 +378,15 @@ footer {
         right: 5px;
         max-height: 130%;
     }
-    
+}
+@media only screen and (max-width: 400px) {
+    /* Further reduce masthead characters for the smallest mobile devices */
+    .content__panel--wide > .steve-comic {
+        left: 0px;
+        max-height: 100%;
+    }
+    .content__panel--wide > .steve-liveaction {
+        right: 0px;
+        max-height: 100%;
+    }
 }
