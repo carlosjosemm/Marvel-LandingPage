@@ -109,6 +109,18 @@ footer {
     height: 8rem;
 }
 
+@media only screen and (max-width: 900px) {
+    .icons__grid img {
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .icons__grid img {
+        height: 3rem;
+    }
+}
+
 /* Hover on animationon icons */
 .icons__grid img:hover {
     animation: scale-up-center 0.3s ease-in-out forwards;
