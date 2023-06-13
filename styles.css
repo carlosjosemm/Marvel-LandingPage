@@ -90,7 +90,7 @@ footer {
 }
 
 .nav-header {
-    background-color: blue;
+    background-color: #004687;
 }
 
 .nav-header > .nav-header__mobileMenu {
@@ -127,7 +127,7 @@ footer {
 
 .content__panel--wide {
     position: relative;
-    background-color: #949899;
+    background-color: #dddfe1;
     color: black;
     font-weight: 800;
     width: 100%;
@@ -247,7 +247,7 @@ footer {
 }
 
 .content__panel--narrow--blue {
-    background-color: darkblue;
+    background-color: #004687;
     font-weight: 500;
     max-width: 100%;
     margin: 14px 25px;
@@ -266,6 +266,20 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     /* grid-template-rows: auto; */
+}
+
+.footer__wrapper {
+    text-align: center;
+}
+.footer__wrapper > .footer__title {
+    margin: 25px 0 14px 0;
+}
+.footer__wrapper i {
+    margin: 0 14px;
+    color: black;
+}
+.footer__wrapper a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {
