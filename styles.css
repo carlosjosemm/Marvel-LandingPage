@@ -150,8 +150,8 @@ footer {
 }
 
 .content__panel--wide > div > p {
-    font-size: 200%;
-    margin: 0 0 14px 0;
+    font-size: 150%;
+    margin: 0 0 10px 0;
 }
 
 /* Limit the width of content for VERY wide screens */
@@ -328,6 +328,10 @@ footer {
     /* Resize text to fill panel*/
     .content__panel--narrow__overviewContent > div {
         max-width: 100%;
+    }
+    .content__panel--wide > div > p {
+        font-size: 100%;
+        margin: 0 0 10px 0;
     }
     /* Collapse the columns into rows */
     .content__panel--narrow__movieinfo {
